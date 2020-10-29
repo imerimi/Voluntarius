@@ -1,0 +1,187 @@
+
+header{
+	background-color:#FFA500;
+	width:100%;
+	height:15%;
+}
+
+body .container  header img{
+	display: block;
+	height:100%;
+	width:20em;
+	margin-left: auto;
+	margin-right: auto;
+}
+body{
+	display:flex;
+	flex-direction:column;
+}
+#slideShow{
+	display: flex;
+	height:40%;
+	
+}
+
+
+.mySlides{
+	height:100%;
+	width:80vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+table{
+	position:absolute;
+	left:50%;
+	top:20%;
+}
+button{
+	box-sizing: border-box;
+	
+	font-size: 12px;
+	border-radius: 4px;
+	border: 2px solid #99ccff;
+	margin: 0em 1em 1em 0em;
+	max-width: 100%;
+	font-size:2vmin;
+}
+button:hover{
+	background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+	box-shadow: inset 0px 1px 1px 0px #D5DBDB;
+}
+
+input{
+	box-sizing: border-box;
+	
+	font-size: 12px;
+	border-radius: 4px;
+	border: 2px solid #99ccff;
+	margin: 0em 1em 1em 0em;
+	max-width: 100%;
+	font-size:2vmin;
+}
+input:hover{
+	background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+	box-shadow: inset 0px 1px 1px 0px #D5DBDB;
+}
+.container{
+	position:absolute;
+	width:100%;
+	height:90%;
+	min-height: 100vh;
+	background-color: white;
+
+}
+.inforBoxContainer{
+	height: 34vh;
+	width:100%;
+	background-color:yellow;
+	overflow:scroll;
+}
+
+.displayInfoPackageLeft{
+	border: 2px solid rainbow;
+	margin: auto;  
+	padding: 2em;
+	background-color: #99ccff;  
+}
+.displayInfoPackageRight{
+	border: 2px solid rainbow;
+	margin: auto;  
+	padding: 2em;
+	background-color: #99ccff;  
+}
+.displayInfoBox{
+	display: flex;
+	flex-direction: row;
+}
+
+.infoBoxButton{
+	text-align:right;
+}
+.navigation_bar{
+	padding-bottom:3.5em;
+	width:100%;
+	background-color:#FFDC00;
+	text-align:right;	
+}
+.navbar a:hover, .dropdown:hover .dropbtn,.login:hover {
+  background-color: red;
+}
+.login{
+	float:right;
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+
+div img{
+	height:10em;
+	width:10em;
+}
+
+#volBtn{
+	display:block;
+	background-color: #99ccff;
+}
+
+
+/* Footer */
+
+footer{
+	float:left;
+	width:100%;
+	background-color:#FFA500;
+	padding:2% 0 0 0;
+	bottom:0;
+}
+
+.footer-block{
+	display:inline;
+}
+
+.footer_option{
+	float:left;
+	width:50%;
+}
+
+.footer-social-media{
+	float:right;
+	width:35%;
+}
+
+.footer-copyright{
+	text-align:center;
+	margin: 30px auto 0 10px;
+	bottom:0;
+}
+
+.footer_option a{
+  color: black;
+  text-decoration: none;
+  margin:2% 0% 2% 5%;
+}
+
+.footer-social-media a{
+  color: black;
+  margin:2% 5% 2% 5%;
+  text-decoration: none;
+  font-style:italic;
+}
+
+.big{
+	transform: scale(1.2);
+}
+
+.footer_option a:hover, .footer-social-media a i:hover{
+  color: white;
+}

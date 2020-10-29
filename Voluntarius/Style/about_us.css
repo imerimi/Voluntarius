@@ -1,0 +1,283 @@
+
+/* General */
+
+sh1, h2, h3, nav, footer {
+	font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+html{
+	height:100%;
+	width:100%;
+}
+
+body {
+	font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+	width:100%;
+	height:100%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+
+/* Header */
+
+header{
+	width:100%;
+	height: 5%; 
+	background-color:white;
+}
+
+header img{
+	height:5em;
+	width:15em;
+}
+
+#slogan{
+	float:right;
+	margin: 3% 5% 0 0;
+}
+
+#logo{
+	float:left;
+	margin-left: 5%;
+}
+
+.sun-icon{
+	font-size:22px;
+	color:orange;
+}
+
+.earth-icon{
+	font-size:22px;
+	color:green;
+}
+
+.slow-spin {
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
+  background-color:yellow;
+   border-radius: 50%;
+}
+
+.slow-spin2 {
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
+  background-color:lightblue;
+    border-radius: 50%;
+}
+
+/* Body */
+/* Navigation Bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: red;
+  position: sticky;
+  top: 0;
+  width:100%;
+}
+
+li {
+  float: right;
+  margin-right: 5%;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 9% 0% 9% 0%;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color:rgba(220, 0, 0, 1);
+  color: white;
+}
+
+
+/* Body */
+/* Navigation Bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFDC00;
+  position: sticky;
+  top: 0;
+  width:100%;
+}
+
+li {
+  float: right;
+  margin-right: 5%;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 9% 0% 9% 0%;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color:rgba(220, 0, 0, 1);
+  color: white;
+}
+
+
+/* About us */
+
+#about_us {
+  padding: 80px; 
+}
+
+.title {
+	text-align: center;
+}
+
+.title h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+	font-size: 35px;
+	margin-bottom:3%;
+		
+}
+
+.title p {
+	margin: 3% auto 5% auto;
+	line-height: 25px;
+	color: grey;
+	font-size:18px;
+	font-style:italic;
+	
+}
+
+
+/* Meet Our Team */
+
+.team{
+	background:#FFDC00;
+	text-align:center;
+}
+
+.inner-team{
+	max-width:1200px;
+	margin:auto;
+	padding:40px;
+	color:black;
+}
+
+.team h1{
+	font-size:20px;
+	display:inline-block;
+	border-bottom: 4px solid;
+	padding-bottom:10px;
+}
+
+.p1{
+	float:left;
+	width: calc(100% /4);
+	overflow:hidden;
+	padding:40px 0;
+	transition:0.5s;
+}
+
+.p1:hover{
+	background:#FFFA6F  ;
+}
+
+.p1 img{
+	width:150px;
+	height:150px;
+}
+
+.name-and-id{
+	margin:5px;
+}
+
+.social-media{
+	margin-top:12px;
+}
+
+.social-media a{
+	margin:0 4px;
+	display:inline-block;
+	width:30px;
+	height:30px;
+	transition:0.5s;
+}
+
+.social-media a:hover{
+	transform: scale(1.2);
+}
+
+.social-media a i{
+	color: black;
+	line-height:30px;
+}
+
+@media screen and (max-width:600px){
+	.p1{
+		width:100%;
+	}
+}
+
+
+/* Footer */
+
+footer{
+	float:left;
+	width:100%;
+	background-color:#FFDC00;
+	padding:2% 0 0 0;
+	bottom:0;
+}
+
+.footer-block{
+	display:inline;
+}
+
+.footer_option{
+	float:left;
+	width:50%;
+}
+
+.footer-social-media{
+	float:right;
+	width:25%;
+}
+
+.footer-copyright{
+	text-align:center;
+	margin: 70px auto 0 10px;
+	margin-bottom:0.25%;
+}
+
+.footer_option a{
+  color: black;
+  text-decoration: none;
+  margin:2% 0% 2% 5%;
+}
+
+.footer-social-media a{
+  color: black;
+  margin:2% 5% 2% 5%;
+  text-decoration: none;
+  font-style:italic;
+}
+
+.big{
+	transform: scale(1.2);
+}
+
+.footer_option a:hover, .footer-social-media a i:hover{
+  color: white;
+}
+ 

@@ -1,0 +1,194 @@
+
+
+/* General */
+
+sh1, h2, h3, nav, footer, span {
+	font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+html{
+	height:100%;
+	width:100%;
+}
+
+body {
+	font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+	width:100%;
+	height:100%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+
+}
+
+
+/* Header */
+
+header{
+	width:100%;
+	height: 5%; 
+	background-color:white;
+}
+
+header img{
+	height:5em;
+	width:15em;
+}
+
+#slogan{
+	float:right;
+	margin: 3% 5% 0 0;
+}
+
+#logo{
+	float:left;
+	margin-left: 5%;
+}
+
+.sun-icon{
+	font-size:22px;
+	color:orange;
+}
+
+.earth-icon{
+	font-size:22px;
+	color:green;
+}
+
+.slow-spin {
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
+  background-color:yellow;
+   border-radius: 50%;
+}
+
+.slow-spin2 {
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
+  background-color:lightblue;
+    border-radius: 50%;
+}
+
+/* Body */
+/* Navigation Bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFDC00;
+  position: sticky;
+  top: 0;
+  width:100%;
+}
+
+li {
+  float: right;
+  margin-right: 5%;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 9% 0% 9% 0%;
+  text-decoration: none;
+}
+
+li a:hover{
+	background-color:yellow;
+  color: orange;
+}
+
+
+/* Main */
+
+.main {
+	background:url(bg1.png) no-repeat bottom;
+	width:100%;
+	padding-bottom:15%;
+}
+
+.greet{
+	text-align:center;
+	font-size:46px;
+	margin:5%;
+}
+
+.container{
+	margin: 0% auto 6% auto;
+	width:25%;
+	background-color:white;
+	border: solid 2px #FFDC00;
+	padding:3%;
+	text-align:center;
+	min-width:200px;
+}
+
+.icon{
+	font-size:16px;
+	color:grey;
+	margin-bottom: 4%;
+}
+
+
+/* Button */
+
+.button{
+	margin:2% auto 2% auto;
+	padding: 2%;
+	background: #FFDC00;
+}
+
+
+/* Footer */
+
+footer{
+	float:left;
+	width:100%;
+	background-color:#FFDC00;
+	padding:2% 0 0 0;
+	bottom:0;
+}
+
+.footer-block{
+	display:inline;
+}
+
+.footer_option{
+	float:left;
+	width:50%;
+}
+
+.footer-social-media{
+	float:right;
+	width:25%;
+}
+
+.footer-copyright{
+	text-align:center;
+	margin: 70px auto 0 10px;
+	margin-bottom:0.25%;
+}
+
+.footer_option a{
+  color: black;
+  text-decoration: none;
+  margin:2% 0% 2% 5%;
+}
+
+.footer-social-media a{
+  color: black;
+  margin:2% 5% 2% 5%;
+  text-decoration: none;
+  font-style:italic;
+}
+
+.big{
+	transform: scale(1.2);
+}
+
+.footer_option a:hover, .footer-social-media a i:hover{
+  color: white;
+}
+

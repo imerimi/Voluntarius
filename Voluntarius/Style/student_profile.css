@@ -1,0 +1,359 @@
+
+header{
+	background-color:#FFA500;
+	width:100%;
+	height:15%;
+}
+body .container  header img{
+	display: block;
+	height:100%;
+	width:20em;
+	margin-left: auto;
+	margin-right: auto;
+}
+fieldset
+{
+	border:5px solid orange;
+}
+body{
+	display:flex;
+	flex-direction:row;
+	min-height: 100vh;
+	width: 100vw;
+	height:100vh;
+}
+
+input[type=file]{
+	width:100%;
+}
+
+button,input[type=submit],input[type=file]{
+	box-sizing: border-box;
+	
+	font-size: 12px;
+	border-radius: 4px;
+	border: 2px solid blue;
+	margin: 0em 1em 1em 0em;
+	max-width: 100%;
+	font-size:2vmin;
+}
+button:hover,input[type=submit]:hover,input[type=file]:hover{
+	background-image: linear-gradient(to top, violet, indigo, blue, green, yellow, orange, red);
+	box-shadow: inset 0px 1px 1px 0px #D5DBDB;
+}
+
+table{
+	position:static;
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	text-align: center;
+	background: lightblue;
+	padding : 8px;
+	text-shadow: 1px 1px 1px green;
+	font-weight:bold;
+	margin:auto;
+	
+}
+td,th{
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	text-align: center;
+	background: lightblue;
+	padding : 8px;
+	text-shadow: 1px 1px 1px green;
+	font-weight:bold;
+}
+
+textarea{
+	width:100%
+}
+
+img{
+	height:15vw;
+	width:15vw;
+}
+.container{
+	position:absolute;
+	width:100%;
+	min-height: 100vh;
+	padding-bottom:2%;
+	background-color: #99ccff;
+}
+.navigation_bar{
+	padding-bottom:3.5em;
+	width:100%;
+	background-color:#FFDC00;
+	text-align:right;	
+}
+.navbar a:hover, .dropdown:hover .dropbtn,.login:hover {
+  background-color: red;
+}
+.login{
+	float:right;
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+
+.form {
+	background-color:white;
+	margin:2em auto 2em auto;
+	padding:0.5em;
+	width:50%;
+}
+.table{
+	margin-bottom:10%;
+	height:12em;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+footer{
+	float:left;
+	width:100%;
+	background-color:#FFA500;
+	padding:2% 0 0 0;
+	bottom:0;
+	margin-bottom:-10em;
+}
+
+.footer-block{
+	display:inline;
+}
+
+.footer_option{
+	float:left;
+	width:50%;
+}
+
+.footer-social-media{
+	float:right;
+	width:35%;
+}
+
+.footer-copyright{
+	text-align:center;
+	margin: 30px auto 0 10px;
+	bottom:0;
+}
+
+.footer_option a{
+  color: black;
+  text-decoration: none;
+  margin:2% 0% 2% 5%;
+}
+
+.footer-social-media a{
+  color: black;
+  margin:2% 5% 2% 5%;
+  text-decoration: none;
+  font-style:italic;
+}
+
+.big{
+	transform: scale(1.2);
+}
+
+.footer_option a:hover, .footer-social-media a i:hover{
+  color: white;
+}
+
+@media only screen and (max-width: 290px) {
+.form {
+	background-color:white;
+	margin:2em auto 2em auto;
+	padding:0.5em;
+	width:100vw;
+}
+img{
+	height:30vw;
+	width:30vw;
+}
+table{
+	position:static;
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	text-align: center;
+	background: lightblue;
+	padding : 8px;
+	text-shadow: 1px 1px 1px green;
+	font-weight:bold;
+	margin:0 auto 0 auto;
+}
+th,td{
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	text-align: center;
+	background: lightblue;
+	padding : 8px;
+	text-shadow: 1px 1px 1px green;
+	font-weight:bold;
+}
+.table{
+	margin-bottom:10%;
+	height:12em;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+}
+@media screen and (min-device-width: 290px) and (max-device-width: 640px){
+.form {
+	background-color:white;
+	margin:2em auto 2em auto;
+	padding:0.5em;
+	width:80vw;
+}
+img{
+	height:30vw;
+	width:30vw;
+}
+table{
+	position:static;
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	text-align: center;
+	background: lightblue;
+	padding : 8px;
+	text-shadow: 1px 1px 1px green;
+	font-weight:bold;
+	margin:0 auto 0 auto;
+}
+th,td{
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	text-align: center;
+	background: lightblue;
+	padding : 8px;
+	text-shadow: 1px 1px 1px green;
+	font-weight:bold;
+}
+.table{
+	margin-bottom:10%;
+	height:12em;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+}
+@media screen and (min-device-width: 640px) and (max-device-width: 768px){
+.form {
+	background-color:white;
+	margin:2em auto 2em auto;
+	padding:0.5em;
+	width:40vw;
+}
+img{
+	height:30vw;
+	width:30vw;
+}
+table{
+	position:static;
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	text-align: center;
+	background: lightblue;
+	padding : 8px;
+	text-shadow: 1px 1px 1px green;
+	font-weight:bold;
+	margin:0 auto 0 auto;
+}
+th,td{
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	text-align: center;
+	background: lightblue;
+	padding : 8px;
+	text-shadow: 1px 1px 1px green;
+	font-weight:bold;
+}
+.table{
+	margin-bottom:10%;
+	height:12em;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1180px){
+.form {
+	background-color:white;
+	margin:2em auto 2em auto;
+	padding:0.5em;
+	width:30vw;
+}
+img{
+	height:25vw;
+	width:25vw;
+}
+table{
+	position:static;
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	text-align: center;
+	background: lightblue;
+	padding : 8px;
+	text-shadow: 1px 1px 1px green;
+	font-weight:bold;
+	margin:auto;
+}
+th,td{
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	text-align: center;
+	background: lightblue;
+	padding : 8px;
+	text-shadow: 1px 1px 1px green;
+	font-weight:bold;
+}
+.table{
+	margin-bottom:10%;
+	height:12em;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+}
+@media (min-width: 1180px) {
+  
+  .form {
+	background-color:white;
+	margin:2em auto 2em auto;
+	padding:0.5em;
+	width:30vw;
+}
+img{
+	height:25vw;
+	width:25vw;
+}
+table{
+	position:static;
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	text-align: center;
+	background: lightblue;
+	padding : 8px;
+	text-shadow: 1px 1px 1px green;
+	font-weight:bold;
+	margin:auto;
+}
+th,td{
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	text-align: center;
+	background: lightblue;
+	padding : 8px;
+	text-shadow: 1px 1px 1px green;
+	font-weight:bold;
+}
+.table{
+	margin-bottom:10%;
+	height:12em;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+  
+}
+

@@ -1,0 +1,350 @@
+sh1, h2, h3, nav, footer {
+	font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+html{
+	height:100%;
+	width:100%;
+
+}
+
+body {
+	font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+	width:100%;
+	height:100%;
+	position:relative;
+	overflow:hidden;
+}
+
+header{
+	width:100%;
+	height:10%;
+	background-color:white;
+	background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url("logo.png");
+	background-repeat:no-repeat;
+	background-size:30vmax;
+	background-position:center;
+	position:relative;
+}
+
+
+/*NAVIGATION BAR SYNTAX*/
+.navigation_bar{
+	width:100%;
+	height:5%;
+	border-radius:0 0 4px 4px;
+	background-color:#2F2E2A;
+	font-size:4vmin;
+}
+.navigation_bar div{
+	float:left;
+}
+#logout_anchor{
+	float:right;
+	text-decoration:none;
+	color:red;
+	
+}
+a:hover#logout_anchor {
+	background-color:#B3B3AD;
+}
+#profile_anchor{
+	position:relative;
+	float:right;
+	text-decoration:none;
+	color:orange;
+	margin-right:2vmin;
+	
+}
+
+a:hover#profile_anchor {
+	background-color:#B3B3AD;
+} 
+
+a.navigation_dropdown{
+	display:none;
+	color:#627CF3;
+	
+}
+.navigation_dropdown_content a{
+	margin-left:2.5vmin;
+	text-decoration:none;
+	color:#627CF3;
+	margin-right:auto;
+	
+}
+.navigation_dropdown_content a:hover{
+	background-color: #B3B3AD;
+	
+}
+@media only screen and (max-width:780px) and (max-height:650px){
+	a.navigation_dropdown{
+		display:inline;
+		text-decoration:none;
+	}
+	.pages_dropdown{
+		position: relative;
+		display: inline-block;
+	}
+	.navigation_dropdown_content{
+		
+		display: none;
+		position: absolute;
+		background-color: #2F2E2A;
+		min-width: 3.5vmin;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 10;
+	}
+	.navigation_dropdown_content a{
+		color:#627CF3;
+		padding: 2vmin 2.2vmin;
+		text-decoration: none;
+		display: block;
+	}
+	.navigation_dropdown_content a:hover{
+		background-color: #B3B3AD;
+	}
+	.pages_dropdown:hover .navigation_dropdown_content{
+		display:block;
+	}
+	.pages_dropdown:hover .navigation_dropdown{
+		background-color: #B3B3AD;
+	}
+
+}
+
+/*If media over min height, automatically hide and become dropdown*/
+@media only screen and (min-height:651px){
+	a.navigation_dropdown{
+		display:inline;
+		text-decoration:none;
+	}
+	.pages_dropdown{
+		position: relative;
+		display: inline-block;
+	}
+	.navigation_dropdown_content{
+		display: none;
+		position: absolute;
+		background-color: #2F2E2A;
+		min-width: 3.5vmin;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 10;
+	}
+	.navigation_dropdown_content a{
+		color:#627CF3;
+		padding: 2vmin 2.2vmin;
+		text-decoration: none;
+		display: block;
+	}
+	.navigation_dropdown_content a:hover{
+		background-color: #B3B3AD;
+	}
+	.pages_dropdown:hover .navigation_dropdown_content{
+		display:block;
+	}
+	.pages_dropdown:hover .navigation_dropdown{
+		background-color: #B3B3AD;
+	}
+}
+/*NAVIGATION BAR SYNTAX ENDS*/
+
+
+.container{
+	position:absolute;
+	width:100%;
+	height:90%;
+}
+
+.ngo_application_menu{
+	position:absolute;
+	text-align:center;
+	width:100%;
+	height:95%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+.ngo_application_menu h1{
+	font-size:4vmin;
+	padding-bottom:4vmin;
+	border-radius:4px;
+	border:1px solid black;
+	background-color:#505050;
+	color:#fa9200 ;
+	top:0;
+	position: sticky;
+	z-index:5;
+
+
+}
+
+
+
+/* Class below is the dynamic div format created for each record which include:
+1. ngo_application_pic
+2. ngo_application_info
+3. ngo_application_button_panel*/
+.ngo_application_menu_content{
+	display: flex;
+	flex-direction: row;
+	min-height:70%;
+	flex-wrap:wrap;
+	text-align:left;
+	border-top:3px solid #fa2a00;
+	width:100%;
+	border-style: outset;
+	color:white;
+	background-color:#616263;
+}
+
+/*Created and inserted when there are no records found to maintain the page components position
+eg: <div class="ngo_application_menu_content">
+<div class="no_record_filler"></div>
+</div>*/
+.no_record_filler{
+	height:80vh;
+}
+
+
+/*Profile picture panel syntax*/
+.ngo_application_pic{
+	width:30%;
+	background-color:;
+
+}
+.ngo_application_pic img{
+	margin:1vmin;
+	border:2px solid black;
+	width:90%;
+	height:90%;
+}
+/*Profile picture panel syntax ENDS*/
+
+/*Application info panel syntax*/
+.ngo_application_info{
+	text-align:left;
+	font-size:4vmin;
+	width:70%;
+	background-color:;
+	overflow-x:scroll;
+	overflow-y:hidden;
+}
+/* Customized scrollbar syntax*/
+.ngo_application_info::-webkit-scrollbar {
+	height:5vmin;
+	width: 5vmin;
+}
+.ngo_application_info::-webkit-scrollbar-track-piece  {
+	-webkit-border-radius: 1ex;
+	background-color:#8f8d89;
+}
+.ngo_application_info::-webkit-scrollbar-thumb { 
+	background-color: #ffb700; 
+	-webkit-border-radius: 1ex;
+	width:5px;
+}
+.ngo_application_info::-webkit-scrollbar-thumb:hover {
+	background-color: #c78f00; 
+}
+/* Customized scrollbar syntax ENDS*/
+/* Class below is the description of the data eg:name, id and etc*/
+.ngo_application_info strong{
+	color:#fcb603;
+}
+/*Application info panel syntax ENDS*/
+
+
+
+
+/*Button panel syntax*/
+.ngo_application_button_panel{
+	text-align:right;
+	width:100%;
+	background-color:gray;
+}
+.button{
+	margin:2vmin;
+	position:relative;
+	font-size:5vmin;
+	box-shadow: 0.1em 0.1em 0.2em #888888;
+	background-color: #4CAF50;
+	border: 0.5px solid black;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	
+}
+.button:hover{
+	background-color:#00b307;
+}
+.button:active{
+	background-color:#29612b;
+}
+
+.button_reject{
+	background-color:#f44336;
+}
+.button_reject:hover{
+	background-color:#f01000;
+}
+.button_reject:active{
+	background-color:#a82e25;
+}
+
+.button_details{
+	background-color:#fca832;
+}
+.button_details:hover{
+	background-color:#fa9200;
+}
+.button_details:active{
+	background-color:#a66f21;
+}
+/*Button panel syntax ENDS*/
+
+
+
+
+/*Footer panel syntax*/
+.container footer{
+	position:relative;
+	bottom:0;
+	width:100%;
+	height:12vmin;
+	background-color:#2F2E2A;
+	padding:2vmin;
+	font-size:3vmin;
+	color:#F9F9F3;
+	display:flex;
+}
+.container footer a{
+	text-decoration:none;
+	color:#627CF3;
+	padding:1.2vmin;
+
+}
+.container footer a:hover{
+	background-color: #B3B3AD;
+}
+
+.footer_left{
+	height:12vmin;
+	width:35%;
+	text-align:left;
+}
+.footer_right{
+	height:12vmin;
+	width:30%;
+	text-align:center;
+}
+.footer_mid{
+	height:12vmin;
+	width:35%;
+}
+.footer_mid p{
+	position:absolute;
+	bottom:0;
+}
+/*Footer panel syntax ENDS*/
+

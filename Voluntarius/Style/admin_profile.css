@@ -1,0 +1,286 @@
+
+
+/* General */
+
+sh1, h2, h3, nav, footer {
+	font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+html{
+	height:100%;
+	width:100%;
+}
+
+body {
+	font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+	width:100%;
+	height:100%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+
+/* Header */
+
+header img{
+	height:5em;
+	width:15em;
+	display: block;
+	margin-right:auto;
+	margin-left: auto;
+}
+
+/* Body */
+
+/*NAVIGATION BAR SYNTAX -from Cheng*/  
+.navigation_bar{
+	width:100%;
+	height:5%;
+	border-radius:0 0 4px 4px;
+	background-color:#2F2E2A;
+	font-size:4vmin;
+}
+.navigation_bar div{
+	float:left;
+}
+#logout_anchor{
+	float:right;
+	text-decoration:none;
+	color:red;
+	
+}
+a:hover#logout_anchor {
+	background-color:#B3B3AD;
+}
+#profile_anchor{
+	position:relative;
+	float:right;
+	text-decoration:none;
+	color:orange;
+	margin-right:2vmin;
+	
+}
+
+a:hover#profile_anchor {
+	background-color:#B3B3AD;
+} 
+a.navigation_dropdown{
+	display:none;
+	color:#627CF3;
+	
+}
+.navigation_dropdown_content a{
+	margin-left:2.5vmin;
+	text-decoration:none;
+	color:#627CF3;
+	margin-right:auto;
+	
+}
+.navigation_dropdown_content a:hover{
+	background-color: #B3B3AD;
+	
+}
+@media only screen and (max-width:780px) and (max-height:650px){
+	a.navigation_dropdown{
+		display:inline;
+		text-decoration:none;
+	}
+	.pages_dropdown{
+		position: relative;
+		display: inline-block;
+	}
+	.navigation_dropdown_content{
+		
+		display: none;
+		position: absolute;
+		background-color: #2F2E2A;
+		min-width: 3.5vmin;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 10;
+	}
+	.navigation_dropdown_content a{
+		color:#627CF3;
+		padding: 2vmin 2.2vmin;
+		text-decoration: none;
+		display: block;
+	}
+	.navigation_dropdown_content a:hover{
+		background-color: #B3B3AD;
+	}
+	.pages_dropdown:hover .navigation_dropdown_content{
+		display:block;
+	}
+	.pages_dropdown:hover .navigation_dropdown{
+		background-color: #B3B3AD;
+	}
+
+}
+
+/*If media over min height, automatically hide and become dropdown*/
+@media only screen and (min-height:651px){
+	a.navigation_dropdown{
+		display:inline;
+		text-decoration:none;
+	}
+	.pages_dropdown{
+		position: relative;
+		display: inline-block;
+	}
+	.navigation_dropdown_content{
+		display: none;
+		position: absolute;
+		background-color: #2F2E2A;
+		min-width: 3.5vmin;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 10;
+	}
+	.navigation_dropdown_content a{
+		color:#627CF3;
+		padding: 2vmin 2.2vmin;
+		text-decoration: none;
+		display: block;
+	}
+	.navigation_dropdown_content a:hover{
+		background-color: #B3B3AD;
+	}
+	.pages_dropdown:hover .navigation_dropdown_content{
+		display:block;
+	}
+	.pages_dropdown:hover .navigation_dropdown{
+		background-color: #B3B3AD;
+	}
+}
+/*NAVIGATION BAR SYNTAX ENDS*/
+
+
+
+/* NGO logo and ID*/
+ 
+.logo-container{
+	background: blue;
+	z-index:-1;
+	
+}
+
+.logo{
+	margin:0 auto 0 auto;
+	text-align:center;
+}
+
+.upload-button{
+	text-align:center;
+	padding:10px;
+}
+
+.id{
+	font: bold 24px arial, sans-serif;
+	padding:1rem;
+	text-align:center;
+	color:white;
+}
+
+
+/* Button */
+
+.btn{
+	font: bold 15px arial, sans-serif;
+	border:none;
+	color:white;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: blue;
+    box-shadow: inset 2px 2px 3px white, 
+                 inset -2px -2px 3px black; 
+}
+
+.btn:hover {
+    background-color:lightblue;
+}
+
+
+/* Form and Fieldset*/
+
+form{
+	font: bold 15px arial, sans-serif;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+fieldset{
+	border:5px solid blue;
+}
+
+legend{
+	text-align:center;
+	padding:5px;
+	font-size:2rem;
+}
+
+textarea{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.center{
+	text-align:center;
+}
+
+
+/* Footer */
+
+footer{
+	float:left;
+	width:100%;
+	background-color:black;
+	padding:2% 0 0 0;
+	bottom:0;
+}
+
+.footer-block{
+	display:inline;
+}
+
+.footer_option{
+	float:left;
+	width:50%;
+}
+
+.footer-social-media{
+	float:right;
+	width:25%;
+	 color: orange;
+}
+
+.footer-copyright{
+	text-align:center;
+	margin: 70px auto 0 10px;
+	margin-bottom:0.25%;
+	 color: red;
+}
+
+.footer_option a{
+  color: blue;
+  text-decoration: none;
+  margin:2% 0% 2% 5%;
+}
+
+.footer-social-media a{
+  color: yellow;
+  margin:2% 5% 2% 5%;
+  text-decoration: none;
+  font-style:italic;
+}
+
+.big{
+	transform: scale(1.2);
+}
+
+.footer_option a:hover, .footer-social-media a i:hover{
+  color: white;
+}
