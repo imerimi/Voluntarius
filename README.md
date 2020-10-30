@@ -2,6 +2,7 @@
 Voluntarius is a web application volunteering system for students done by a group of MMU students.
 
 Functions:
+
 1.Visitors are able to register an account.
 2.Visitor, Students, NGO and Admin are able to view dashboard.
 3.Students are able to volunteer for an events.
